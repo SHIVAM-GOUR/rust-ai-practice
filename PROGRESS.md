@@ -1,14 +1,14 @@
 # Progress Tracker
 
 ## Streak
-**Current streak:** 0 days
-**Last practiced:** —
-**Longest streak:** 0 days
+**Current streak:** 1 day
+**Last practiced:** 2026-05-05
+**Longest streak:** 1 day
 
 ---
 
 ## Milestones
-- [ ] First problem solved
+- [x] First problem solved
 - [ ] Complete Fundamentals (30/30)
 - [ ] Complete Ownership & Borrowing (4/4)
 - [ ] Complete Lifetimes (3/3)
@@ -21,7 +21,7 @@
 - [ ] Complete Macros + Modules + Memory
 - [ ] All 84 problems solved 🎉
 
-**Next milestone:** Solve first problem
+**Next milestone:** Complete Fundamentals (30/30)
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Date | Problems Attempted | Problems Solved | Notes |
 |------|-------------------|-----------------|-------|
-| — | — | — | — |
+| 2026-05-05 | F01, F02 | 2 | Variables — immutability, shadowing |
 
 ---
 

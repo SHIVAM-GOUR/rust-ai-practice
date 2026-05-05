@@ -5,5 +5,15 @@
 // Date: [today's date]
 
 fn main() {
-    // your solution here
+    let x = 5;
+    let x = x + 1;
+    let x = x * 2;
+
+    println!("final value: {}", x);
+
+    // change value by shadowing
+    let y = 12;
+    println!("{}", y);
+    let y = "shivam";
+    println!("changed value: {}", y);
 }

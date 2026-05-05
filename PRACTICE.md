@@ -1,20 +1,20 @@
 # Rust Core Concepts Practice Tracker
 
-**Overall: 0/84 solved**
+**Overall: 2/84 solved**
 
 > Legend: `[ ]` Unsolved · `[~]` Attempted · `[x]` Solved · `[★]` Mastered · `►` Current
 
 ---
 
-## Fundamentals [0/30]
+## Fundamentals [2/30]
 
 > Mixed topics, very easy to easy. Start here to build your Rust muscle memory before the deeper groups.
 
 | ID | Challenge | Topic | Status |
 |----|-----------|-------|--------|
-| F01 ► | Declare a mutable variable, reassign it; demonstrate that immutability is default | Variables | [ ] |
-| F02 | Demonstrate shadowing: let x = 5; let x = x + 1; let x = x * 2 | Variables | [ ] |
-| F03 | Write a function that takes ownership of a String and returns it | Ownership | [ ] |
+| F01 | Declare a mutable variable, reassign it; demonstrate that immutability is default | Variables | [x] |
+| F02 | Demonstrate shadowing: let x = 5; let x = x + 1; let x = x * 2 | Variables | [x] |
+| F03 ► | Write a function that takes ownership of a String and returns it | Ownership | [ ] |
 | F04 | Borrow a String with & — read its length without taking ownership | Borrowing | [ ] |
 | F05 | Use a mutable reference &mut to modify a value inside a function | Borrowing | [ ] |
 | F06 | Return a reference from a function with explicit lifetime annotations | Lifetimes | [ ] |
