@@ -1,12 +1,12 @@
 # Rust Core Concepts Practice Tracker
 
-**Overall: 2/84 solved**
+**Overall: 4/84 solved**
 
 > Legend: `[ ]` Unsolved · `[~]` Attempted · `[x]` Solved · `[★]` Mastered · `►` Current
 
 ---
 
-## Fundamentals [2/30]
+## Fundamentals [4/30]
 
 > Mixed topics, very easy to easy. Start here to build your Rust muscle memory before the deeper groups.
 
@@ -14,10 +14,10 @@
 |----|-----------|-------|--------|
 | F01 | Declare a mutable variable, reassign it; demonstrate that immutability is default | Variables | [x] |
 | F02 | Demonstrate shadowing: let x = 5; let x = x + 1; let x = x * 2 | Variables | [x] |
-| F03 ► | Write a function that takes ownership of a String and returns it | Ownership | [ ] |
-| F04 | Borrow a String with & — read its length without taking ownership | Borrowing | [ ] |
-| F05 | Use a mutable reference &mut to modify a value inside a function | Borrowing | [ ] |
-| F06 | Return a reference from a function with explicit lifetime annotations | Lifetimes | [ ] |
+| F03 | Write a function that takes ownership of a String and returns it | Ownership | [x] |
+| F04 | Borrow a String with & — read its length without taking ownership | Borrowing | [x] |
+| F05 | Use a mutable reference &mut to modify a value inside a function | Borrowing | [x] |
+| F06 ► | Return a reference from a function with explicit lifetime annotations | Lifetimes | [ ] |
 | F07 | Implement a struct with fields and an impl block with a constructor and method | Structs | [ ] |
 | F08 | Derive Debug and implement Display for a struct | Traits | [ ] |
 | F09 | Define an enum with variants, use match to handle all arms | Enums | [ ] |

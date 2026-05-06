@@ -39,7 +39,8 @@
 
 | Date | Problems Attempted | Problems Solved | Notes |
 |------|-------------------|-----------------|-------|
-| 2026-05-05 | F01, F02 | 2 | Variables — immutability, shadowing |
+| 2026-05-05 | F01, F02, F03, F04 | 4 | Variables — immutability, shadowing; Ownership — return from function; Borrowing — &String |
+| 2026-05-06 | F05 | 1 | Borrowing — &mut reference, dereferencing with * to modify in place |
 
 ---
 
