@@ -17,8 +17,8 @@
 | F03 | Write a function that takes ownership of a String and returns it | Ownership | [x] |
 | F04 | Borrow a String with & — read its length without taking ownership | Borrowing | [x] |
 | F05 | Use a mutable reference &mut to modify a value inside a function | Borrowing | [x] |
-| F06 ► | Return a reference from a function with explicit lifetime annotations | Lifetimes | [ ] |
-| F07 | Implement a struct with fields and an impl block with a constructor and method | Structs | [ ] |
+| F06 | Return a reference from a function with explicit lifetime annotations | Lifetimes | [x] |
+| F07 ► | Implement a struct with fields and an impl block with a constructor and method | Structs | [ ] |
 | F08 | Derive Debug and implement Display for a struct | Traits | [ ] |
 | F09 | Define an enum with variants, use match to handle all arms | Enums | [ ] |
 | F10 | Use Option<T> to represent a possibly absent value; unwrap safely with if let | Option | [ ] |
