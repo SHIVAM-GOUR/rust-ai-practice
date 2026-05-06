@@ -1,17 +1,27 @@
-fn main() {
-    let x: String = String::from("shivam");
-    let y: String = String::from("long-shivam");
-    println!("{}, {}", x, y);
+// code goes here
 
-    let longer = temp_func(&x, &y);
-
-    println!("longer: {}", longer);
+struct User {
+    name: String,
+    age: i8,
+    cars: i8,
 }
 
-fn temp_func<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() {
-        x
-    } else {
-        y
+impl User {
+    // constructor
+    fn new(name: String, age: i8, cars: i8) -> User {
+        User { name, age, cars }
     }
+
+    // method
+    fn printUser(&self) {
+        println!("name - {}", self.name);
+        println!("age - {}", self.age);
+        println!("cars - {}", self.cars);
+    }
+}
+
+fn main() {
+    let s = User::new(String::from("shivam gour"), 27, 1);
+
+    s.printUser();
 }
