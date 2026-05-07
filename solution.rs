@@ -1,17 +1,29 @@
-fn main() {
-    let x: String = String::from("shivam");
-    let y: String = String::from("long-shivam");
-    println!("{}, {}", x, y);
-
-    let longer = temp_func(&x, &y);
-
-    println!("longer: {}", longer);
+#[allow(dead_code)]
+enum Direction {
+    East,
+    West,
+    North,
+    South,
+    Northeast,
 }
 
-fn temp_func<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() {
-        x
-    } else {
-        y
+fn main() {
+    let d = Direction::South;
+    let x = describe(&d);
+    println!("{}", x);
+    let p = describe(&d);
+    println!("{}", p);
+
+    // let n = Direction::North;
+    // let y = describe(n);
+    // println!("{}", y);
+}
+
+fn describe(d: &Direction) -> &'static str {
+    match d {
+        Direction::East => "Going East",
+        Direction::West => "Going West",
+        Direction::North => "Going North",
+        Direction::South => "Going South",
     }
 }
