@@ -1,6 +1,6 @@
 # Rust Core Concepts Practice Tracker
 
-**Overall: 9/84 solved**
+**Overall: 11/84 solved**
 
 > Legend: `[ ]` Unsolved · `[~]` Attempted · `[x]` Solved · `[★]` Mastered · `►` Current
 
@@ -22,10 +22,10 @@
 | F08 | Derive Debug and implement Display for a struct | Traits | [x] |
 | F09 | Define an enum with variants, use match to handle all arms | Enums | [x] |
 | F10 | Use Option<T> to represent a possibly absent value; unwrap safely with if let | Option | [x] |
-| F11 ► | Write a function returning Result<T, E>; handle both Ok and Err variants | Error Handling | [ ] |
-| F12 | Use the ? operator to propagate errors up the call stack | Error Handling | [ ] |
-| F13 | Implement a custom error type that implements std::error::Error | Error Handling | [ ] |
-| F14 | Create a Vec<i32>, push elements, iterate with for and with .iter() | Collections | [ ] |
+| F11 | Write a function returning Result<T, E>; handle both Ok and Err variants | Error Handling | [x] |
+| F12 | Use the ? operator to propagate errors up the call stack | Error Handling | [x] |
+| F13 | Implement a custom error type that implements std::error::Error | Error Handling | [x] |
+| F14 ► | Create a Vec<i32>, push elements, iterate with for and with .iter() | Collections | [ ] |
 | F15 | Use HashMap<String, i32> to count word frequencies in a sentence | Collections | [ ] |
 | F16 | Chain Iterator methods: map → filter → collect into a Vec | Iterators | [ ] |
 | F17 | Write a closure that captures a variable from the enclosing scope by reference | Closures | [ ] |

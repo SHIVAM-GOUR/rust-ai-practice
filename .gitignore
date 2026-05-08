@@ -10,7 +10,7 @@ ehthumbs.db
 Desktop.ini
 
 # Editor directories and files
-.vscode/
+# .vscode/
 .idea/
 *.swp
 *.swo

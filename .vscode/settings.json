@@ -1,0 +1,4 @@
+{
+  // Disable GitHub Copilot Next Edit Suggestions (NES)
+  "github.copilot.nextEditSuggestions.enabled": false
+}

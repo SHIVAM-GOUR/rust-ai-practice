@@ -1,28 +1,38 @@
-fn main() {
-    let a = [1, 3, 7, 4, 9];
-    let b = [1, 3, 7, 9];
+use std::error::Error;
+use std::fmt;
 
-    match find_first_even(&a) {
-        Some(val) => println!("first case output: {}", val),
-        None => println!("first case output: No even found"),
-    }
-    if let Some(val) = find_first_even(&b) {
-        println!("first case output: {}", val);
-    } else {
-        println!("first case output: No even found");
-    }
-    // match find_first_even(&b) {
-    //     Some(val) => println!("first case output: {}", val),
-    //     None => println!("first case output: No even found"),
-    // }
+#[derive(Debug)]
+enum ParseError {
+    EmptyInput,
+    InvalidNumber(String),
 }
 
-fn find_first_even(numbers: &[i32]) -> Option<i32> {
-    for x in numbers {
-        if x % 2 == 0 {
-            return Some(*x);
+impl fmt::Display for ParseError {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        match self {
+            ParseError::EmptyInput => write!(f, "input is empty"),
+            ParseError::InvalidNumber(name) => write!(f, "invalid input: {}", name),
         }
     }
+}
 
-    None
+impl Error for ParseError {}
+
+fn main() {
+    println!("{:?}", parse_positive(""));
+    println!("{:?}", parse_positive("abc"));
+    println!("{:?}", parse_positive("42"));
+}
+
+fn parse_positive(s: &str) -> Result<u32, ParseError> {
+    if s.is_empty() {
+        Err(ParseError::EmptyInput)?;
+        // return Err(ParseError::EmptyInput);
+        // Err::<u32, ParseError>(ParseError::EmptyInput)?;
+    }
+
+    let val = s
+        .parse()
+        .map_err(|e: std::num::ParseIntError| ParseError::InvalidNumber(e.to_string()))?;
+    Ok(val)
 }
