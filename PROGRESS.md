@@ -1,9 +1,9 @@
 # Progress Tracker
 
 ## Streak
-**Current streak:** 1 day
-**Last practiced:** 2026-05-05
-**Longest streak:** 1 day
+**Current streak:** 2 days
+**Last practiced:** 2026-05-08
+**Longest streak:** 2 days
 
 ---
 
@@ -50,4 +50,7 @@
 
 > Recurring borrow checker errors, lifetime gotchas, aha moments.
 
-- (empty)
+- `?` expands to a match with early return + `.into()` for error type conversion via `From`
+- `impl Error for T {}` can be empty — only supertrait bounds `Debug + Display` are required
+- Storing `String` in error variants loses the original error and breaks `source()` chaining; prefer owning the original error type
+- `'static` on error types means no borrowed references, not "lives forever" — errors should own their data
