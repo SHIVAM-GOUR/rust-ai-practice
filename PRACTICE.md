@@ -1,12 +1,12 @@
 # Rust Core Concepts Practice Tracker
 
-**Overall: 12/84 solved**
+**Overall: 13/84 solved**
 
 > Legend: `[ ]` Unsolved · `[~]` Attempted · `[x]` Solved · `[★]` Mastered · `►` Current
 
 ---
 
-## Fundamentals [5/30]
+## Fundamentals [6/30]
 
 > Mixed topics, very easy to easy. Start here to build your Rust muscle memory before the deeper groups.
 
@@ -26,8 +26,8 @@
 | F12 | Use the ? operator to propagate errors up the call stack | Error Handling | [x] |
 | F13 | Implement a custom error type that implements std::error::Error | Error Handling | [x] |
 | F14 | Create a Vec<i32>, push elements, iterate with for and with .iter() | Collections | [x] |
-| F15 ► | Use HashMap<String, i32> to count word frequencies in a sentence | Collections | [ ] |
-| F16 | Chain Iterator methods: map → filter → collect into a Vec | Iterators | [ ] |
+| F15 | Use HashMap<String, i32> to count word frequencies in a sentence | Collections | [x] |
+| F16 ► | Chain Iterator methods: map → filter → collect into a Vec | Iterators | [ ] |
 | F17 | Write a closure that captures a variable from the enclosing scope by reference | Closures | [ ] |
 | F18 | Define a generic function with a trait bound (e.g., fn largest<T: PartialOrd>) | Generics | [ ] |
 | F19 | Implement the Display trait (fmt::Display) for a custom struct | Traits | [ ] |

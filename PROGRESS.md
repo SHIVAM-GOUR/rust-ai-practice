@@ -44,6 +44,7 @@
 | 2026-05-07 | F07, F08, F09 | 3 | Structs — impl block with constructor using Self return type, shorthand field init, #[derive(Debug)]; Traits — manual Display impl with fmt::Formatter and write! macro; Enums — exhaustive match, &'static str return type |
 | 2026-05-08 | F10, F11, F12, F13 | 4 | Option — Some/None variants, returning Option<i32> from a function, match vs if let for safe unwrapping; Result — Ok/Err variants, String error type, division by zero guard; ? operator — propagating errors up the call stack, map_err for type conversion; Custom error type — enum with variants, impl Display + Error, impl Error for empty body |
 | 2026-05-09 | F14 | 1 | Vec<i32> — push, for x in &v (borrow) vs .iter(), both yield &i32; vec still usable after both iterations |
+| 2026-05-11 | F15 | 1 | HashMap<String, i32> — entry().or_insert(0) returns &mut i32, dereference with * to increment; split_whitespace yields &str so .to_string() needed for owned keys |
 
 ---
 

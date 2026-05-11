@@ -1,21 +1,15 @@
+use std::collections::HashMap;
+
 fn main() {
-    let mut v: Vec<i32> = Vec::new();
+    let text: String = String::from("hello world hello rust world hello");
+    println!("{}", text);
 
-    v.push(1);
-    v.push(2);
-    v.push(3);
-    v.push(4);
+    let mut counts: HashMap<&str, i32> = HashMap::new();
 
-    println!("{:?}", v);
-
-    for x in &v {
-        println!("{}", x);
+    for word in text.split_whitespace() {
+        let count = counts.entry(word).or_insert(0);
+        *count += 1;
     }
 
-    println!("again");
-    for x in v.iter() {
-        println!("{}", x);
-    }
-
-    println!("{:?}", v);
+    println!("{:#?}", counts);
 }
