@@ -1,9 +1,9 @@
 # Progress Tracker
 
 ## Streak
-**Current streak:** 2 days
-**Last practiced:** 2026-05-08
-**Longest streak:** 2 days
+**Current streak:** 3 days
+**Last practiced:** 2026-05-09
+**Longest streak:** 3 days
 
 ---
 
@@ -43,6 +43,7 @@
 | 2026-05-06 | F05, F06 | 2 | Borrowing — &mut reference, dereferencing with * to modify in place; Lifetimes — explicit 'a annotation on function returning a reference |
 | 2026-05-07 | F07, F08, F09 | 3 | Structs — impl block with constructor using Self return type, shorthand field init, #[derive(Debug)]; Traits — manual Display impl with fmt::Formatter and write! macro; Enums — exhaustive match, &'static str return type |
 | 2026-05-08 | F10, F11, F12, F13 | 4 | Option — Some/None variants, returning Option<i32> from a function, match vs if let for safe unwrapping; Result — Ok/Err variants, String error type, division by zero guard; ? operator — propagating errors up the call stack, map_err for type conversion; Custom error type — enum with variants, impl Display + Error, impl Error for empty body |
+| 2026-05-09 | F14 | 1 | Vec<i32> — push, for x in &v (borrow) vs .iter(), both yield &i32; vec still usable after both iterations |
 
 ---
 
